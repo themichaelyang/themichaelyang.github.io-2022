@@ -1,1 +1,13 @@
+.projects {
+  @extend %list-reset;
+  float: left;
+  width: 48.5%;
+  padding-right: 1.5%;
+}
 
+.posts {
+  @extend %list-reset;
+  float: left;
+  width: 48.5%;
+  padding-left: 1.5%;
+}

@@ -1,0 +1,23 @@
+.navbar {
+  @extend %clearfix;
+}
+
+.navbar__inner {
+  @extend %list-reset;
+  @extend %container;
+  @extend %centered;
+}
+
+.navbar__text {
+  color: $navbar-color;
+
+  &:visited {
+    color: $navbar-color;
+  }
+}
+
+.navbar__item {
+  float: left;
+  margin-right: 2em;
+  padding: $spacing-unit 0;
+}
