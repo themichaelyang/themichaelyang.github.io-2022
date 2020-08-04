@@ -1,0 +1,84 @@
+$base-font-family: --apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$spacing-unit:     $base-font-size;
+$text-color:       black;
+$background-color: white;
+$link-color:      #2a7ae2;
+
+$grey-color:       #aaa;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$navbar-bg-color: #eee;
+$navbar-color: black;
+$navbar-height: 3em;
+
+// Solarized syntax highlighting
+$solarized-base01: black;
+$solarized-base1: #93a1a1;
+$solarized-base3: #fdf6e3;
+$solarized-orange: #cb4b16;
+$solarized-red: #dc322f;
+$solarized-blue: #268bd2;
+$solarized-cyan: #2aa198;
+$solarized-green: #859900;
+$solarized-yellow: #B58900;
+
+/**
+* Reset some basic elements
+*/
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+}
+
+/**
+* Basic styling
+*/
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.navbar {
+  @extend %clearfix;
+}
+
+.navbar__inner {
+  @extend %list--reset;
+  @extend %container--centered;
+}
+
+.navbar__text {
+  color: $navbar-color;
+
+  &:visited {
+    color: $navbar-color;
+  }
+}
+
+.navbar__item {
+  margin-right: 2em;
+  float: left;
+  padding: $spacing-unit 0;
+}
+
+main {
+  @extend %container--centered;
+  padding-top: 3 * $spacing-unit;
+  padding-bottom: 3 * $spacing-unit;
+}

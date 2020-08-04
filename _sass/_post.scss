@@ -1,0 +1,120 @@
+/**
+* Set `margin-bottom` to maintain vertical rhythm
+*/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure, table,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit;
+}
+
+p {
+  hyphens: auto;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+/**
+* Images
+*/
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+* Figures
+*/
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+/**
+* Lists
+*/
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+* Headings
+*/
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 500;
+  // font-weight: 300;
+  // letter-spacing: -0.01em;
+}
+
+/**
+* Links
+*/
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+* Blockquotes
+*/
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+* Code formatting
+*/
+pre,
+code {
+  font-size: 0.9em;
+  border: 1px solid darken($solarized-base3, 20%);
+  border-radius: 3px;
+  background-color: $solarized-base3;
+  color: $solarized-base01;
+  font-family: Consalas, Monaco, monospace;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
