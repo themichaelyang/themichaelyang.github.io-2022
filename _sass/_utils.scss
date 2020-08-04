@@ -1,25 +1,20 @@
-%block--reset {
+%reset {
   padding: 0;
   margin: 0;
 }
 
-%list--reset {
-  @extend %block--reset;
+%list-reset {
+  @extend %reset;
   list-style: none;
 }
 
-%block--centered {
+%centered {
   margin: 0 auto;
 }
 
 %container {
   width: 90%;
   max-width: 42em;
-}
-
-%container--centered {
-  @extend %container;
-  @extend %block--centered;
 }
 
 /**
