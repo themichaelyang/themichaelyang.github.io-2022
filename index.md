@@ -8,23 +8,25 @@ I studied CS and Math at NYU. Previously, I was a hackNY Fellow at BuzzFeed. I h
 
 You can contact me at yangmichael@nyu.edu. I’m also on Github as @themichaelyang.
 
+<div class="Home__Featured">
+  <ul class="Home__Projects">
+    <h1 class="Home__Heading">Projects</h1>
+    {% assign projects = site.projects | reverse %}
+    {% for project in projects %}
+      <li>
+        <a class="project-name" href="{{ project.link }}">{{ project.name }}</a>
+        <p class="project-description">{{ project.description }}</p>
+      </li>
+      {% endfor %}
+  </ul>
 
-<ul class="projects">
-  {% assign projects = site.projects | reverse %}
-  {% for project in projects %}
-    <li>
-      <a class="project-name" href="{{ project.link }}">{{ project.name }}</a>
-      <p class="project-description">{{ project.description }}</p>
-    </li>
+  <ul class="Home__Posts">
+    <h1 class="Home__Heading">Articles</h1>
+    {% for post in site.posts %}
+      <li>
+        <a class="post-name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p class="post-description">{{ post.description }}</p>
+      </li>
     {% endfor %}
-</ul>
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li>
-      <a class="post-name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <p class="post-description">{{ post.description }}</p>
-    </li>
-  {% endfor %}
-</ul>
-
+  </ul>
+<div>
