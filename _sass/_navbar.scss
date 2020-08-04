@@ -7,14 +7,6 @@
     @extend %centered;
   }
 
-  &__link {
-    color: $navbar-color;
-
-    &:visited {
-      color: $navbar-color;
-    }
-  }
-
   &__item {
     float: left;
     margin-right: 2em;

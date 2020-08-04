@@ -1,3 +1,20 @@
+.Post {
+  font-family: Charter;
+
+  &__header {
+    margin-bottom: 4 * $spacing-unit;
+    font-family: Infini;
+  }
+
+  &__title {
+    font-size: $base-font-size;
+  }
+
+  &__date {
+    color: #C4B2B2;
+  }
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure, table {

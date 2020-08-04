@@ -7,9 +7,9 @@ $base-line-height: 1.4;
 
 $small-font-size:  $base-font-size * 0.875;
 $spacing-unit:     $base-font-size;
-$text-color:       black;
-$background-color: white;
-$link-color:      #2a7ae2;
+$text-color:       #272634;
+$background-color: #F8F9FA;
+$link-color:       #2a7ae2;
 
 $grey-color:       #aaa;
 $grey-color-light: lighten($grey-color, 40%);
@@ -35,7 +35,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  font-family: $base-font;
 }
 
 body {
