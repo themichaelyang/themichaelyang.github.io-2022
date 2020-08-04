@@ -10,14 +10,16 @@
   &__Projects {
     @extend %list-reset;
     float: left;
-    width: 48.5%;
-    padding-right: 1.5%;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: $spacing-unit / 2;
   }
 
   &__Posts {
     @extend %list-reset;
     float: left;
-    width: 48.5%;
-    padding-left: 1.5%;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: $spacing-unit / 2;
   }
 }

@@ -1,8 +1,9 @@
-$base-font: --apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// $base-font: --apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$base-font: Infini;
 $code-font: Menlo, Consalas, mono;
 $base-font-size:   18px;
 $base-font-weight: 400;
-$base-line-height: 1.5;
+$base-line-height: 1.4;
 
 $small-font-size:  $base-font-size * 0.875;
 $spacing-unit:     $base-font-size;
@@ -45,6 +46,8 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
   height: 100%;
   min-height: 100vh;
