@@ -1,5 +1,6 @@
 .Post {
   font-family: Charter;
+  color: black;
 
   &__header {
     margin-bottom: 4 * $spacing-unit;
@@ -11,7 +12,8 @@
   }
 
   &__date {
-    color: #C4B2B2;
+    color: $grey;
+    // color: #C4B2B2;
   }
 }
 
@@ -73,10 +75,10 @@ a {
 }
 
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: 18px;
+  color: $grey;
+  border-left: 2px solid $grey-light;
+  padding-left: $spacing-unit;
+  font-size: $base-font-size;
   font-style: italic;
 
   > :last-child {
