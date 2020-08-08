@@ -38,8 +38,15 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+  background-color: $background-color;
+}
+
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font;
+  font-family: $base-font;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
 
