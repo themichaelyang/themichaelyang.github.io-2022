@@ -21,12 +21,13 @@ You can contact me at yangmichael@nyu.edu. I’m also on Github as @themichaelya
   </ul>
 
   <ul class="Home__Posts">
-    <h1 class="Home__Heading">Articles</h1>
-    {% for post in site.posts %}
+    <h1 class="Home__Heading">Latest posts</h1>
+    {% for post in site.posts limit:3%}
       <li>
         <a class="post-name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <p class="post-description">{{ post.description }}</p>
       </li>
     {% endfor %}
+    <p><em>Read more from the <a href='/blog'>blog</a></em>    ➡️</p>
   </ul>
 <div>
