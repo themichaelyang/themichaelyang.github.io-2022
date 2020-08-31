@@ -1,5 +1,6 @@
 .Navbar {
   @extend %clearfix;
+  margin: 1rem 0;
 
   &__inner {
     @extend %list-reset;
@@ -10,9 +11,15 @@
   &__item {
     float: left;
     margin-right: 2em;
-    padding: $spacing-unit 0;
+    padding: $unit 0;
+  }
+
+  &__link {
+    font-family: $system-font;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-decoration: none;
   }
 }
-
-
-

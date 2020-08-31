@@ -1,3 +1,13 @@
-.Blog__Posts {
+.Posts {
   @extend %list-reset;
+}
+
+.PostItem {
+  &__Title {
+    float: left;
+  }
+
+  &__Date {
+    float: right;
+  }
 }

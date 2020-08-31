@@ -1,6 +1,6 @@
 .Home {
   &__Featured {
-    margin-top: 4 * $spacing-unit;
+    margin-top: 2 * $unit;
   }
 
   &__Heading {
@@ -12,7 +12,7 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
-    padding-right: $spacing-unit / 2;
+    padding-right: $unit / 2;
   }
 
   &__Posts {
@@ -20,6 +20,6 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
-    padding-left: $spacing-unit / 2;
+    padding-left: $unit / 2;
   }
 }

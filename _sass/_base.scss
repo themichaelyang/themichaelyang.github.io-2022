@@ -4,10 +4,10 @@ $code-font: Menlo, Consalas, "DejaVu Mono", mono;
 $post-font: Charter, "Bitstream Charter", Palatino, "Palatino Linotype", "URW Palladio L", "Tex Gyre Pagella", "Book Antiqua", Georgia, serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
-$base-line-height: 1.4;
+$base-line-height: 1.333;
 
 $small-font-size:  $base-font-size * 0.875;
-$spacing-unit:     $base-font-size;
+$unit:     $base-font-size;
 $text-color:       #272634;
 $background-color: #F8F9FA;
 $link-color:       #2a7ae2;
@@ -40,12 +40,12 @@ dl, dd, ol, ul, figure {
 
 html {
   background-color: $background-color;
+  font-size: $base-font-size;
 }
 
 body {
   font-family: $base-font;
   font-weight: $base-font-weight;
-  font-size: $base-font-size;
   line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
@@ -53,12 +53,6 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  // -moz-osx-font-smoothing: grayscale;
-  // -webkit-font-smoothing: antialiased;
-
-  height: 100%;
-  min-height: 100vh;
-  max-width: 100vw;
 
   @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
 		-moz-osx-font-smoothing: grayscale;
@@ -69,6 +63,5 @@ body {
 main {
   @extend %centered;
   @extend %container;
-  padding-top: 3 * $spacing-unit;
-  padding-bottom: 3 * $spacing-unit;
+  margin: 2.5rem auto;
 }
