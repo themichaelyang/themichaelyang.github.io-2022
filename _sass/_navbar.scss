@@ -21,5 +21,13 @@
     font-weight: bold;
     letter-spacing: 0.06em;
     text-decoration: none;
+    transition-duration: 100ms;
+    position: relative;
+    bottom: 0;
+
+    &:hover {
+      position: relative;
+      bottom: 0.2em;
+    }
   }
 }
