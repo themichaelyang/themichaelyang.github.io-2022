@@ -3,11 +3,33 @@
 }
 
 .PostItem {
+  @extend %clearfix;
+  position: relative;
+
+  &::before {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    border: 1px solid $grey-light;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+
   &__Title {
     float: left;
+    position: relative;
+    z-index: 1;
+    padding-right: 0.5em;
+    background-color: $background-color;
   }
 
   &__Date {
     float: right;
+    position: relative;
+    z-index: 1;
+    padding-left: 0.5em;
+    background-color: $background-color;
   }
 }

@@ -1,6 +1,6 @@
 .Post {
   font-family: $post-font;
-  color: black;
+  // color: black;
 
   &__header {
     margin-bottom: 4 * $unit;
@@ -14,7 +14,7 @@
   }
 
   &__date {
-    color: #AEAEAE;
+    color: $grey; 
   }
 
   h3 + ul {
