@@ -13,9 +13,10 @@ $background-color: #F8F9FA;
 $link-color:       #2a7ae2;
 
 $grey: #AEAEAE;
-// $grey:       #C4B2B2;
-$grey-light: lighten($grey, 15%);
+$grey-light: #d5d5d5;
 $grey-dark:  darken($grey, 25%);
+// $grey:       #C4B2B2;
+// $grey-light: lighten($grey, 15%);
 
 $navbar-bg-color: #eee;
 $navbar-color: black;
