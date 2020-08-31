@@ -5,6 +5,7 @@
 .PostItem {
   @extend %clearfix;
   position: relative;
+  display: block;
 
   &::before {
     box-sizing: border-box;
