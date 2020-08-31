@@ -6,12 +6,13 @@
   @extend %clearfix;
   position: relative;
   display: block;
+  margin-bottom: 0.75 * $unit;
 
   &::before {
     box-sizing: border-box;
     content: '';
     display: block;
-    border: 1px solid $grey-light;
+    border-bottom: 2px dotted #d5d5d5;
     position: absolute;
     top: 50%;
     left: 0;
