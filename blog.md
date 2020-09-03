@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Michael's blog
 ---
 
 <ul class="Posts">
