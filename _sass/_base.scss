@@ -67,3 +67,18 @@ main {
   @extend %container;
   margin: 2.5rem auto;
 }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  // transition: color 100ms;
+  // background-image: linear-gradient(#000, #000);
+  // background-repeat: no-repeat;
+  // background-size: 100% 0%;
+  // background-position: 0% 70%;
+  &:hover {
+    // color: orange;
+    // background-size: 100% 90%;
+    // color: white;
+  }
+}

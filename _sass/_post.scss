@@ -65,16 +65,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-
-  &:visited {
-    color: inherit;
-  }
-
-}
-
 blockquote {
   color: $grey;
   border-left: 2px solid $grey-light;
