@@ -10,7 +10,7 @@
   &__Projects {
     @extend %list-reset;
     float: left;
-    width: 50%;
+    /* width: 50%; */
     box-sizing: border-box;
     padding-right: $unit / 2;
   }
