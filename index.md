@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Hello! 
+<p style="margin-bottom: 2rem">Hello!</p>
 
 I’m Michael. I like [learning](https://ocw.mit.edu) and [programming](https://www.ruby-lang.org/en/). I’m on Github as [@themichaelyang](http://github.com/themichaelyang).
 
